@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>52 todo</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!--To do list js-->
+         <link rel="stylesheet" href="todostyles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+        />
+        <!-- task list js-->
+        
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Home</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#todo">Weekly Todo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#complete-todo">Completed Tasks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#task-editor">All Tasks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Yearly Report</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Quater Yearly Report</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End of nav-->
+
+        <!-- todos-->
+        <section class="page-section" id="todo">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Weekly Tasks</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2"></h3>
+                            <!--<p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                            --></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2"></h3>
+                            <!--<p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                            --></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2"></h3>
+                            <!--<p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                            --> </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2"></h3>
+                            <!--<p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                            --></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Not todo section-->
+            <section class="page-section" id="complete-todo">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Completed</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2"></h3>
+                            <!--<p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                            --></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2"></h3>
+                            <!--<p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                            --></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2"></h3>
+                            <!--<p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                            --> </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2"></h3>
+                            <!--<p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                            --></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Trial Section to Make Tasks-->
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">All Tasks</h2>
+                <hr class="divider" />
+        <div
+      class="app-container d-flex align-items-center justify-content-center flex-column"
+      ng-app="myApp"
+      ng-controller="myController"
+    >
+      <div class="d-flex align-items-center mb-3">
+        <div class="form-group mr-3 mb-0">
+          <input
+            ng-model="yourTask"
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Enter a task here"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary mr-3"
+          ng-click="saveTask()"
+        >
+          Save
+        </button>
+        <button type="button" class="btn btn-warning" ng-click="getTask()">
+          Get Tasks
+        </button>
+      </div>
+      {{ yourName }}
+      <div class="table-wrapper">
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Todo item</th>
+              <th>status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              ng-repeat="task in tasks"
+              class="{{ task.status ? 'table-success' : 'table-light' }}"
+            >
+              <td>{{ $index + 1}}</td>
+              <td class="{{ task.status ? 'complete' : 'task' }}">
+                {{ task.task_name }}
+              </td>
+              <td>{{ task.status ? "Completed" : "In progress" }}</td>
+              <td>
+                <button class="btn btn-danger" ng-click="delete($index)">
+                  Delete
+                </button>
+                <button class="btn btn-success" ng-click="finished($index)">
+                  Finished
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>  
+    </section>
+    <!-- end of nt-->
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- Other Scripts from todo-->
+        <script> var app = angular.module("myApp", []);
+      app.controller("myController", function($scope) {
+        $scope.tasks = [];
+        // $scope.saved = localStorage.getItem("tasks");
+        // $scope.tasks =
+        //   localStorage.getItem("tasks") !== null
+        //     ? JSON.parse($scope.saved)
+        //     : [
+        //         { task_name: "Learn AngularJS", status: false },
+        //         { task_name: "Build an Angular app", status: false }
+        //       ];
+        // localStorage.setItem("tasks", JSON.stringify($scope.tasks));
+        $scope.saveTask = function() {
+          $scope.tasks.push({ task_name: $scope.yourTask, status: false });
+          //   localStorage.setItem("tasks", JSON.stringify($scope.tasks));
+            var tr = document.getElementById('formGroupExampleInput')
+            var todo_list_headers = document.querySelectorAll('h3')
+            //console.log(todo_list_headers[0])
+            todo_list_headers.forEach((task_card, tc_index) => {
+                console.log(task_card.innerText)
+                if (task_card.innerText == "") {
+                    task_card.innerText = tr.value;
+                    console.log(task_card)
+                    
+                };
+            });
+        };
+        $scope.getTask = function() {
+          var oldTasks = $scope.tasks;
+          $scope.tasks = [];
+          angular.forEach(oldTasks, function(task) {
+            if (!task.done) $scope.tasks.push(task);
+          });
+          localStorage.setItem("tasks", JSON.stringify($scope.tasks));
+        };
+        $scope.delete = function(i) {
+          $scope.tasks.splice(i, 1);
+        };
+        $scope.finished = function(i) {
+          $scope.tasks[i].status = true;
+        };
+
+      });
+</script>
+         <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    </body>
+</html>
